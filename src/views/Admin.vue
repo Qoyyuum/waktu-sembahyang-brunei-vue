@@ -154,11 +154,7 @@ export default {
 
   computed: {
     IsConvertable() {
-      if (this.originalText === "" || this.selected_month == 0) {
-        return true;
-      } else {
-        return false;
-      }
+      return this.originalText === "" || this.selected_month == 0 ? true : false;
     },
   },
 };
